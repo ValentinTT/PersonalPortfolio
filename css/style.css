@@ -28,7 +28,20 @@ header h1{
 	font-size: 150px;
 	color: #000;
 }
-
-.home {
+#about {
+	background-color: #2c343b;
 	height: 50vh;
+	color: white;
+	padding: 0px !important;
+}
+
+.home1 {
+	height: 50vh;
+	background-color: black;
+	text-decoration-color: white;
+	
+}
+.home2 {
+	height: 50vh;
+	
 }
