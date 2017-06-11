@@ -7,22 +7,58 @@
 	<!--Style-->
 	<link rel="stylesheet" href="css/style.css">
 	<!--Bootstrap-->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!--FontAwesome-->
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<!--Smooth-->
+	<script src="js/smooth-scroll.js"></script>
+	<script>
+		smoothScroll.init({
+    // Selectors
+    selector: '[data-scroll]', // Selector for links (must be a valid CSS selector)
+    selectorHeader: null, // Selector for fixed headers (must be a valid CSS selector) [optional]
+
+    // Speed & Easing
+    speed: 500, // Integer. How fast to complete the scroll in milliseconds
+    offset: 0, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
+    easing: 'easeInOutCubic', // Easing pattern to use
+		callback: function(anchor, toggle){}});
+	</script>
 </head>
 <body>
 	<!--Navbar-->
+	<nav class="navbar navbar-toggleable-md navbar-light bg-faded sticky-top">
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+	    <i class="fa fa-bars" aria-hidden="true"></i>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbar-content">
+	    <a class="navbar-brand" href="#">Valentin TT</a>
+	    <div class="navbar-nav ml-auto mt-2 mt-lg-0">
+	      <a data-scroll href="#home-section" class="nav-item nav-link">Home</a>
+	      <a data-scroll href="#about-section" class="nav-item nav-link">About</a>
+	      <a data-scroll href="#portfolio-section" class="nav-item nav-link">Portfolio</a>
+	      <a data-scroll href="#" class="nav-item nav-link">Contact</a>
+	    </div>
+	  </div>
+	</nav>
 	<!--Navbar end-->
 	<!--Home-->
+	<header id="home-section">
 		<h1>Valentin TT</h1>
 	</header>
 	<!--Home end-->
 	<!--About-->
+	<section class="container-fluid text-center" id="about-section">
 		<h1>About</h1>
 		<div class="row d-flex justify-content-center align-items-center">
+			<img class="col-sm-5 img-fluid rounded-circle" src="imagenes/perfilImage.jpg" alt="A picture of me" style="max-width: 500px">
+			<div class="col-sm-7">
 				<h4>Lorem ipsum dolor sit.</h4>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores molestiae laboriosam doloribus vitae laudantium voluptatum, nobis quaerat quo. Eaque enim, dignissimos similique libero impedit non tenetur earum officia vero ratione.</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis veritatis soluta ratione deleniti aut ducimus quam officiis rem laudantium quod, omnis, possimus enim iste? Fugit esse, molestias id at rem!</p>
 			</div>
 		</div>
+	</section>
 	<!--About end-->
 
 	<!--Portfolio-->
@@ -57,5 +93,9 @@
 	<div class="home2"></div>
 	<!--end auxiliar section-->
 
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
