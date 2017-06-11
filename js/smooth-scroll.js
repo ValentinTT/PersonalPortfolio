@@ -309,7 +309,7 @@
 	 * @return {Number}        The height of the header
 	 */
 	var getHeaderHeight = function ( header ) {
-		return 56;//!header ? 0 : ( getHeight( header ) + header.offsetTop );
+		return 46;//!header ? 0 : ( getHeight( header ) + header.offsetTop );
 	};
 
 	/**
