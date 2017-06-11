@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script");
 
-html, 
-body {
-	height: 100vh;
-}
 /*Efecto dedicado a la imagen de fondo*/
 header {
 	background: url("../imagenes/home.jpg");
@@ -28,7 +24,12 @@ header h1{
 	font-size: 150px;
 	color: #000;
 }
-#about {
+#about-section {
+	background-color: #2c343b;
+	color: white;
+	padding: 30px !important;
+}
+#portfolio-section {
 	background-color: #2c343b;
 	color: white;
 	padding: 30px !important;
