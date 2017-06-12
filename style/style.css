@@ -27,12 +27,18 @@
 #about-section {
 	background-color: #3B82D6;
 	color: white;
-	padding: 30px !important;
+	padding: 50px !important;
 }
 #portfolio-section {
 	background-color: #3DA1A3;
-	color: white;
-	padding: 30px !important;
+	padding: 50px !important;
+}
+#portfolio-section .card:hover{
+	box-shadow: 0 35px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transition: .8s ease;
+}
+#portfolio-section .card{
+  transition: box-shadow .8s;
 }
 .home1 {
 	height: 50vh;
