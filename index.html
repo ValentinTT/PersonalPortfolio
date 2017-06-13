@@ -10,35 +10,35 @@
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<!--FontAwesome-->
 		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+		<!--AOS-->
+		<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 	</head>
-	<body>
+	<body data-spy="scroll" data-target=".navbar" data-offset="50">
 		<!--Navbar-->
-		<nav class="navbar navbar-toggleable-md navbar-light bg-faded fixed-top"">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
-			<i class="fa fa-bars" aria-hidden="true"></i>
+		<nav class="navbar fixed-top navbar-toggleable-md navbar-light bg-faded">
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<i class="fa fa-bars"></i>
 			</button>
-			<div class="collapse navbar-collapse" id="navbar-content">
-				<a class="navbar-brand" href="#">Valentin TT</a>
-				<div class="nav navbar-nav ml-auto mt-2 mt-lg-0">
-					<a href="#home-section" class="nav-item nav-link">Home</a>
-					<a href="#about-section" class="nav-item nav-link">About</a>
-					<a href="#portfolio-section" class="nav-item nav-link">Portfolio</a>
-					<a href="#contact-section" class="nav-item nav-link">Contact</a>
-				</div>
+			<h1 class="navbar-brand mb-0"">Valentin TT</h1>
+			<div class="collapse navbar-collapse " id="navbarSupportedContent">
+				<a class="nav-item nav-link active" href="#home-section">Home <span class="sr-only">(current)</span></a>
+				<a class="nav-item nav-link" href="#about-section">About</a>
+				<a class="nav-item nav-link" href="#portfolio-section">Portfolio</a>
+				<a class="nav-item nav-link" href="#contact-section">Contact</a>
 			</div>
 		</nav>
 		<!--Navbar end-->
 		<!--Home-->
-		<section id="home-section">
-			<p class="display-1">Valentin TT</p>
+		<section id="home-section" class="home">
+			<p class="display-1 text-center">Valentin TT</p>
 		</section>
 		<!--Home end-->
 		<!--About-->
-		<section class="container-fluid text-center" id="about-section">
-			<h1>About</h1>
+		<section class="container-fluid text-center about" id="about-section">
+			<h1 class="pt-2" data-aos="flip-up">About</h1>
 			<div class="row d-flex justify-content-center align-items-center">
-				<img class="col-sm-5 img-fluid rounded-circle" src="imagenes/perfilImage.jpg" alt="A picture of me" style="max-width: 500px">
-				<div class="col-sm-7">
+				<img class="col-sm-5 img-fluid rounded-circle" src="http://via.placeholder.com/500x500" alt="A picture of me" data-aos="fade-up-right">
+				<div class="col-sm-7 mt-2" data-aos="fade-up-left">
 					<h4>Lorem ipsum dolor sit.</h4>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores molestiae laboriosam doloribus vitae laudantium voluptatum, nobis quaerat quo. Eaque enim, dignissimos similique libero impedit non tenetur earum officia vero ratione.</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis veritatis soluta ratione deleniti aut ducimus quam officiis rem laudantium quod, omnis, possimus enim iste? Fugit esse, molestias id at rem!</p>
@@ -47,12 +47,15 @@
 		</section>
 		<!--About end-->
 		<!--Portfolio-->
-		<section class="container-fluid" id="portfolio-section">
-			<h4 class="text-center">Portfolio</h4>
-			<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur alias qui adipisci, accusamus molestiae.</p>
+		<section class="container-fluid portfolio" id="portfolio-section">
+			<div class="pt-2" data-aos="fade-down">
+				<h1 class="text-center">Portfolio</h1>
+				<h4 class="text-center hidden-md-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur alias qui adipisci, accusamus molestiae.</h4>
+				<h6 class="text-center hidden-lg-up">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur alias qui adipisci, accusamus molestiae.</h6>
+			</div>
 			
 			<div class="row">
-				<div class="col-lg-4 col-md-6 col-sm-12 my-4">
+				<div class="col-lg-4 col-md-6 col-sm-12 my-4" data-aos="zoom-in">
 					<div class="card">
 						<img class="card-img-top img-fluid" src="http://via.placeholder.com/800x400" alt="Card image cap">
 						<div class="card-img-overlay">
@@ -60,7 +63,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6 col-sm-12 my-4">
+				<div class="col-lg-4 col-md-6 col-sm-12 my-4" data-aos="zoom-in">
 					<div class="card">
 						<img class="card-img-top img-fluid" src="http://via.placeholder.com/800x400" alt="Card image cap">
 						<div class="card-img-overlay">
@@ -68,7 +71,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6 col-sm-12 my-4">
+				<div class="col-lg-4 col-md-6 col-sm-12 my-4" data-aos="zoom-in">
 					<div class="card">
 						<img class="card-img-top img-fluid" src="http://via.placeholder.com/800x400" alt="Card image cap">
 						<div class="card-img-overlay">
@@ -76,7 +79,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6 col-sm-12 my-4">
+				<div class="col-lg-4 col-md-6 col-sm-12 my-4" data-aos="zoom-in">
 					<div class="card">
 						<img class="card-img-top img-fluid" src="http://via.placeholder.com/800x400" alt="Card image cap">
 						<div class="card-img-overlay">
@@ -84,7 +87,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6 col-sm-12 my-4">
+				<div class="col-lg-4 col-md-6 col-sm-12 my-4" data-aos="zoom-in">
 					<div class="card">
 						<img class="card-img-top img-fluid" src="http://via.placeholder.com/800x400" alt="Card image cap">
 						<div class="card-img-overlay">
@@ -92,7 +95,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6 col-sm-12 my-4">
+				<div class="col-lg-4 col-md-6 col-sm-12 my-4" data-aos="zoom-in">
 					<div class="card">
 						<img class="card-img-top img-fluid" src="http://via.placeholder.com/800x400" alt="Card image cap">
 						<div class="card-img-overlay">
@@ -104,9 +107,9 @@
 		</section>
 		<!--end Porfolio-->
 		<!--Contact-->
-		<div id="contact-section">
-			<div class="row text-center text-lg-left">
-				<div class="col-lg-4">
+		<div id="contact-section" class="contact">
+			<div class="row text-center text-lg-left pt-2">
+				<div class="col-lg-4" data-aos="fade-up-right">
 					<h4>Valentin TT</h4>
 					<div class="my-2">
 						<a href="#" target="_blank">
@@ -140,8 +143,13 @@
 							</span>
 						</a>
 					</div>
+					<div class="collapse" id="collapseExample">
+						<div class="card card-block">
+							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+						</div>
+					</div>
 				</div>
-				<div class="col-lg-8">
+				<div class="col-lg-8" data-aos="fade-up-left">
 					<h4 class="text-center">Contact me</h4>
 					<div class="input-group my-2">
 						<span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
@@ -152,20 +160,26 @@
 						<input class="form-control" type="text" placeholder="Message">
 					</div>
 					<div class="d-flex flex-row-reverse">
-						<a id="btn-submit" type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i> <span>Submit</span></a>
+						<a type="submit" class="btn btn-primary btn-submit"><i class="fa fa-paper-plane"></i> <span>Submit</span></a>
 					</div>
 				</div>
 			</div>
 		</div>
 		<!--end Contact-->
 		<!--Footer-->
-		<footer>
-			
+		<footer class="bg-inverse py-5">
+			<div class="text-center">
+				<p class="text-white">This page was coded by <a href="#">Valentin TT</a></p>
+			</div>
 		</footer>
 		<!--end Footer-->
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="js/bootstrap.min.js"></script>
+		<!--AOS-->
+		<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+		<!--myJavascript-->
+		<script src="js/myjs.js"></script>
 	</body>
 </html>
