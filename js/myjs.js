@@ -44,3 +44,11 @@ $(document).ready(function() {
 		$('.navbar-collapse').collapse('hide');
 	});
 });
+
+$('#collapseWhatsapp').on('show.bs.collapse', function () {
+  $('#collapseTelegram').collapse('hide');
+})
+$('#collapseTelegram').on('show.bs.collapse', function () {
+  $('#collapseWhatsapp').collapse('hide');
+})
+
