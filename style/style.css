@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script");
-@import url("https://fonts.googleapis.com/css?family=Slabo+27px");
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One");
+@import url("https://fonts.googleapis.com/css?family=Arvo");
 .home {
 	background: url("../imagenes/home.jpg");
 	height: 100vh;
@@ -23,13 +24,13 @@
 	color: #000
 }
 .about {
-	font-family: 'Slabo 27px' !important;
+	font-family: 'Arvo' !important;
 	background-color: #3B82D6;
 	color: white;
 	padding: 50px !important;
 }
 .portfolio {
-	font-family: 'Slabo 27px' !important;
+	font-family: 'Arvo' !important;
 	background-color: #3DA1A3;
 	padding: 50px !important;
 }
@@ -41,7 +42,7 @@
 	transition: box-shadow .3s;
 }
 .contact {
-	font-family: 'Slabo 27px' !important;
+	font-family: 'Arvo' !important;
 	padding: 50px !important;
 }
 .contact a{
@@ -70,7 +71,7 @@
   text-decoration: none;
 }
 footer {
-	font-family: 'Slabo 27px' !important;
+	font-family: 'Arvo' !important;
 }
 footer a {
 	text-decoration: none;
