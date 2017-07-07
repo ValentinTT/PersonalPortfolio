@@ -47,26 +47,20 @@ body {
 	transition: .3s ease;
 }
 .portfolio .card img {
-  -webkit-filter: brightness(100%);
-	-webkit-transition: all .5s ease;
-	-moz-transition: all .5s ease;
-	-o-transition: all .5s ease;
-	-ms-transition: all .5s ease;
-	transition: all .5s ease;
+	opacity: 1;
+	transition: 0.3s;
 }
 .portfolio .card:hover img {
-	-webkit-filter: brightness(30%);
-	-webkit-transition: all .5s ease;
-	-moz-transition: all .5s ease;
-	-o-transition: all .5s ease;
-	-ms-transition: all .5s ease;
-	transition: all .5s ease;
+	opacity: 0.5;
+	transition: 0.3s;
 }
 .portfolio .card .card-title {
-	visibility: hidden;
+	
+	transition: font-size 0.3s;
 }
 .portfolio .card:hover .card-title {
-	visibility: visible;
+	font-size: 50px;
+	transition: 0.3s;
 }
 .contact {
 	font-family: 'Arvo' !important;
